@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { addItemToCard } from "../redux/cartSliceFood.js.js";
+import { addItemToCard } from "../redux/cartSliceFood.js";
 import { useDispatch } from "react-redux";
 import ChangeQuantityFood from "../Cart/ChangeQuantityFood.js.js";
 

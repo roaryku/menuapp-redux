@@ -15,7 +15,7 @@ function App() {
       <div className='nav'>
           <Link to = '/' className='link'>Home</Link>
           <Link to = '/DessertComponent/DishesApp' className='link'>Dessert</Link>
-          <Link to = '/MenuApp' className='link'>Menu</Link>
+          <Link to = '/MenuApp' className='link'>Food</Link>
       </div>
 
       <Routes>

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import CartItem from "./CartItem.js";
 import icon from './add-cart_icon copy.png'
-import { getCartItems, getTotalPrice } from "../redux/cartSlice";
+import { getCartItems, getTotalPrice } from "../redux/cartSlice.js";
 
 const Cart = () => {
 

@@ -6,9 +6,9 @@ const AllCategoriesFood = () => {
 
         <div className='AllCategoryContainer'>
             {['ITALIAN', 'SEAFOOD', 'APPETIZERS', 'SALADS', 'ALL']
-            .map(((category, idFood) => 
+            .map(((category, dishId) => 
             <FilterFood category = {category}
-            key={idFood}
+            key={dishId}
             />
             ))}
          </div>

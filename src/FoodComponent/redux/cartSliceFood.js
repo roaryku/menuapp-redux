@@ -2,22 +2,22 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 export const slice = createSlice({
-    name: 'cart',
+    name: 'recipeCart',
     initialState: {
-        cartItems: []
+        itemsInCart: []
     },
     reducers: {
        addItemToCard: (state, action) => {
         const timeId = new Date().getTime()
-        state.cartItems.push({
+        state.itemsInCart.push({
             idFood: timeId,
-            dishId: action.payload.dish.id,
+            dishId: action.payload.dish.idFood,
             quantity: action.payload.quantity,
             totalPrice: action.payload.quantity * action.payload.dish.price
         })
        },
        removeItemFromCart: (state, action) => {
-         state.cartItems = state.cartItems.filter(
+         state.itemsInCart = state.itemsInCart.filter(
             cartItem => cartItem.idFood !== action.payload.cartItemId
          )
        }

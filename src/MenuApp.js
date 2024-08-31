@@ -1,14 +1,15 @@
-import Dishes from "./FoodComponent/FoodDishesComponents/DishesFood";
-import AllCategories from "./FoodComponent/FilterFood/AllCategoriesFood.js";
-import Cart from "./FoodComponent/Cart/CartFood";
+
 import './App.css';
+import DishesFood from "./FoodComponent/FoodDishesComponents/DishesFood";
+import AllCategoriesFood from "./FoodComponent/FilterFood/AllCategoriesFood.js";
+import CartFood from "./FoodComponent/Cart/CartFood";
 
 
 const MenuApp = () => {
     return (<div className="MenuApp">
-        <Dishes/>
-        <AllCategories/>
-        <Cart/>
+        <DishesFood/>
+        <AllCategoriesFood/>
+        <CartFood/>
     </div>)
 }
 export default MenuApp;

@@ -4,7 +4,7 @@ import CartItemFood from "./CartItemFood";
 
 const CartFood = () => {
 
-    const cartItems = useSelector(getCartItems);
+    const itemsInCart = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
    
     return (
@@ -17,9 +17,9 @@ const CartFood = () => {
             </div>
             
             <div className="ItemsInTheCart">
-                {cartItems.map((cartItem, idFood) => 
-                   <CartItemFood cartItem={cartItem}
-                   key={idFood}
+                {itemsInCart.map((cartItem, cartId) => 
+                   <CartItemFood itemsInCart={cartItem}
+                   key={cartId}
                    />
                 
                 )}

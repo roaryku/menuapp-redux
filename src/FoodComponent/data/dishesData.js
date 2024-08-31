@@ -153,7 +153,6 @@ const dishesData = [
     category: 'SALADS'
   
   }
-  
-  ] 
+] 
   
   export default dishesData;

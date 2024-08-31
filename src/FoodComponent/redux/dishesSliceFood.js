@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 
 export const dishesSliceFood = createSlice({
-    name: 'dishes',
+    name: 'recipeDishes',
     initialState: {
         selectedCategory: 'ALL'
     },
