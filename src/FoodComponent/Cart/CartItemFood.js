@@ -5,8 +5,7 @@ import { useDispatch } from "react-redux";
 const CartItemFood = ({itemsInCart}) => {
 
     const recipeDishes = dishesData.find(item => item.idFood === itemsInCart.dishId)
-    const dispatch = useDispatch();
-    console.log (recipeDishes)
+    const dispatch = useDispatch()
 
     return(
         <div>
