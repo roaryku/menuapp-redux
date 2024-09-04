@@ -4,11 +4,14 @@
   flex-wrap: wrap;
   margin-top: 10px;
 }
-.backgroundImage{
-  background-image: url(background.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .block{
   color: #222831;
