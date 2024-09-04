@@ -116,7 +116,6 @@ p,h1,h2,h3,button{
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
-  /* margin-bottom: 10px; */
 }
 .link{
   text-decoration: none;
