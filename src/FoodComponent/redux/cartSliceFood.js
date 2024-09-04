@@ -18,18 +18,18 @@ export const slice = createSlice({
        },
        removeItemFromCart: (state, action) => {
          state.itemsInCart = state.itemsInCart.filter(
-            cartItem => cartItem.idFood !== action.payload.cartItemId
+            itemsInCart => itemsInCart.idFood !== action.payload.itemsInCartId
          )
        }
     }
 })
 
 export const getTotalPrice = state => {
-    return state.cart.cartItems.reduce((total, cartItems) => {
-        return cartItems.totalPrice + total
+    return state.recipeCart.itemsInCart.reduce((total, itemsInCart) => {
+        return itemsInCart.totalPrice + total
     }, 0)
 }
 
-export const getCartItems = state => state.cart.cartItems;
+export const getCartItems = state => state.recipeCart.itemsInCart;
 export const { addItemToCard, removeItemFromCart } = slice.actions;
 export default slice.reducer

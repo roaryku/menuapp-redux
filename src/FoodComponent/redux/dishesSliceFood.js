@@ -13,6 +13,6 @@ export const dishesSliceFood = createSlice({
     }
 })
 
-export const getSelectedCategory = state => state.dishes.selectedCategory;
+export const getSelectedCategory = state => state.recipeDishes.selectedCategory;
 export const { filterCategory } = dishesSliceFood.actions;
 export default dishesSliceFood.reducer
